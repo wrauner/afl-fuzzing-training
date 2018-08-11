@@ -1,0 +1,92 @@
+{
+    "segments": [
+        {
+            "start": 65536, 
+            "content_file": "20d6010897b49723420617437d82744d.bin", 
+            "end": 561152, 
+            "name": "/home/pi/cjson/cjson_parser", 
+            "permissions": {
+                "x": true, 
+                "r": true, 
+                "w": false
+            }
+        }, 
+        {
+            "start": 622592, 
+            "content_file": "9f0ec7fa0473f16af3a1f0220f05d4ee.bin", 
+            "end": 630784, 
+            "name": "/home/pi/cjson/cjson_parser", 
+            "permissions": {
+                "x": false, 
+                "r": true, 
+                "w": true
+            }
+        }, 
+        {
+            "start": 630784, 
+            "content_file": "7fcbfdc5ffc58d90ac1b547e53f22ba5.bin", 
+            "end": 774144, 
+            "name": "[heap]", 
+            "permissions": {
+                "x": false, 
+                "r": true, 
+                "w": true
+            }
+        }, 
+        {
+            "start": 3070226432, 
+            "content_file": "3323128e587907eb0a9e561d64554f72.bin", 
+            "end": 3070230528, 
+            "name": "[sigpage]", 
+            "permissions": {
+                "x": true, 
+                "r": true, 
+                "w": false
+            }
+        }, 
+        {
+            "start": 3204313088, 
+            "content_file": "3cdf8beaf22964904d0d37cee7b41155.bin", 
+            "end": 3204448256, 
+            "name": "[stack]", 
+            "permissions": {
+                "x": false, 
+                "r": true, 
+                "w": true
+            }
+        }, 
+        {
+            "start": 4294901760, 
+            "content_file": "f00d9a8910c29f9c5299a0436704df33.bin", 
+            "end": 4294905856, 
+            "name": "[vectors]", 
+            "permissions": {
+                "x": true, 
+                "r": true, 
+                "w": false
+            }
+        }
+    ], 
+    "arch": {
+        "arch": "armle"
+    }, 
+    "regs": {
+        "r4": 3204445480, 
+        "r5": 81856, 
+        "r6": 0, 
+        "r7": 0, 
+        "r0": 15, 
+        "r1": 3204445344, 
+        "r2": 100, 
+        "r3": 3204445344, 
+        "r11": 3204445452, 
+        "r8": 0, 
+        "r9": 0, 
+        "pc": 66820, 
+        "lr": 66804, 
+        "r12": 0, 
+        "r10": 0, 
+        "cpsr": 16, 
+        "sp": 3204445336
+    }
+}

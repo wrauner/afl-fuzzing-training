@@ -1,0 +1,11 @@
+
+###   executable names
+
+EXEC 			= test_$(PROJECT).exe
+EXEC_ASAN 		= test_$(PROJECT)_asan.exe
+EXEC_MSAN 		= test_$(PROJECT)_msan.exe  
+EXEC_COV 		= test_$(PROJECT)_cov.exe
+EXEC_LAF 		= test_$(PROJECT)_laf.exe
+EXEC_PLAIN 		= test_$(PROJECT)_plain.exe
+ALL_EXECS		= $(EXEC) $(EXEC_ASAN) $(EXEC_MSAN) $(EXEC_COV) $(EXEC_LAF) $(EXEC_PLAIN)
+

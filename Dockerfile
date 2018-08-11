@@ -6,12 +6,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV LLVM_CONFIG=llvm-config-3.8
 ENV GOPATH=/home/root/go
 
-COPY . .
-
 RUN apt-get update && apt-get install -y wget \
     build-essential git clang-3.8 golang-go python-setuptools cython libini-config-dev \
     lcov gnuplot graphviz doxygen libglib2.0-dev automake sudo texinfo libtool-bin bison \
-    gdb python-pip screen vim netcat
+    gdb python-pip screen vim netcat man
 
 WORKDIR /home/root/fuzz/install
 RUN if [ -z "$(ls -A /home/root/fuzz/install)" ] ; then \
@@ -33,7 +31,7 @@ RUN if [ -z "$(ls -A /home/root/fuzz/install)" ] ; then \
 #build afl
 RUN ln -s /usr/bin/clang-3.8 /usr/bin/clang
 RUN ln -s /usr/bin/clang++-3.8 /usr/bin/clang++
-RUN cd afl-2.52b && make -j4 && cd qemu_mode && CPU_TARGET=arm ./build_qemu_support.sh \
+RUN cd afl-2.52b && make -j4 && cd qemu_mode && ./build_qemu_support.sh \
     && cd ../llvm_mode && make && cd ../ && make install
 RUN cp -r afl-2.52b afl-llvm-passes
 
